@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-export const Menu = () => {
+export const Menu = ({ setCurrentState }) => {
 
 
 
@@ -13,19 +13,31 @@ export const Menu = () => {
     };
 
 
+    const handleClickIndex = () => {
+        setCurrentState(1);
+    }
+
+    const handleClickTecnologiasUtilizadas = () => {
+        setCurrentState(2);
+    }
+
+    const handleClickMotivacion = () => {
+        setCurrentState(3);
+    }
+
+
     return (
         <header>
             <div className="container">
-                <div className="logo">
+                <div onClick={handleClickIndex} className="logo">
                     <img src="images\logo.png" alt="Logo" />
                     <h3>Gif App</h3>
                 </div>
 
                 <div className="links">
                     <ul>
-                        <li><a href="#">Sobre mi</a></li>
-                        <li><a href="#">Tecnologias utilizadas</a></li>
-                        <li><a href="#">Motivacion</a></li>
+                        <li><a onClick={handleClickTecnologiasUtilizadas}>Tecnologías utilizadas</a></li>
+                        <li><a onClick={handleClickMotivacion}>Motivación</a></li>
                     </ul>
                 </div>
 

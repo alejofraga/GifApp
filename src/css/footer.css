@@ -15,7 +15,6 @@
 footer {
     width: 100%;
     background-color: #f5f5f5;
-    padding: 20px;
     bottom: 0;
 }
 
@@ -77,12 +76,19 @@ footer {
     color: aqua;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pie-pagina .grupo-1 .box:hover h2 {
     color: aqua;
     font-size: 150%;
     transition: 0.3s;
 
 }
+
 
 .pie-pagina .grupo-2 {
     background-color: #0a1a2a;

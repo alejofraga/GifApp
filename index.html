@@ -5,17 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GifApp</title>
-  <link rel="icon" type="image/png" href="/src/images/logo.png" sizes="16x16">
-  <link rel="stylesheet" href="/src/css/estilo.css">
+  <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
 </head>
 
-<body>
+<body id="index">
   <main>
     <div class="big-wrapper light">
       <div id="root"></div>
       <script type="module" src="/src/main.jsx"></script>
     </div>
-    <footer></footer>
   </main>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -23,10 +21,12 @@
       // Ejecutar el script menu.js aquí
       const script = document.createElement('script');
       script.type = 'module';
-      script.src = 'src/helpers/menu.js';
+      script.src = 'menu.js';
       document.body.appendChild(script);
     });
   </script>
 </body>
+<footer></footer>
+
 
 </html>
